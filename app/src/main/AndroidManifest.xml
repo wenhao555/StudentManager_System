@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.studentmanager_system">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.MainActivity">
+
+        </activity>
+        <activity android:name=".Activity.admin_login_activity">
+        </activity>
+        <activity android:name=".Activity.adminActivity">
+        </activity>
+        <activity android:name=".Activity.studentinfoActivity">
+        </activity>
+        <activity android:name=".Activity.add_studentinfoActivity">
+        </activity>
+        <activity android:name=".Activity.student_total_score">
+        </activity>
+        <activity android:name=".Activity.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".service.MusicServer"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.angel.Android.MUSIC"/>
+
+                <category android:name="android.intent.category.default"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
